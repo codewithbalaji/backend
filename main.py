@@ -22,7 +22,7 @@ app = FastAPI(title="Sales Quantity & Inventory Management API")
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000","https://datathon-beta.vercel.app"],  # Add your frontend URL
+    allow_origins=["*"],  # Add your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
